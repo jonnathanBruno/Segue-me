@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.375" name="Sistema_Orcamento">
+  <DataContextMoniker Name="/Sistema_OrcamentoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e0555a7a-eaf6-4379-a4a9-19f4acc340a4" absoluteBounds="0.75, 1.375, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/Sistema_OrcamentoDataContext/EQUIPE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b44e76c0-f14f-43a8-afc6-2a6f5350648d" absoluteBounds="0.765, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eafa69d5-4fe3-4441-805f-6687087ce683" absoluteBounds="0.75, 6, 2, 3.1170068359374996">
+      <DataClassMoniker Name="/Sistema_OrcamentoDataContext/SEGUIDOR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b3781e18-ed61-455c-bdc6-1618878f1901" absoluteBounds="0.765, 6.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f01b12df-0d6b-4118-993b-b08c84caebe9" absoluteBounds="3.5, 1, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/Sistema_OrcamentoDataContext/SEGUIDOREQUIPE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d68cd1b0-c25f-49ba-bef0-5fd21c227983" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.06814697265625); (3.5 : 2.06814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Sistema_OrcamentoDataContext/EQUIPE/EQUIPE_SEGUIDOREQUIPE" />
+      <nodes>
+        <classShapeMoniker Id="e0555a7a-eaf6-4379-a4a9-19f4acc340a4" />
+        <classShapeMoniker Id="f01b12df-0d6b-4118-993b-b08c84caebe9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.55850341796875); (4.5 : 7.55850341796875); (4.5 : 3.34780110677083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Sistema_OrcamentoDataContext/SEGUIDOR/SEGUIDOR_SEGUIDOREQUIPE" />
+      <nodes>
+        <classShapeMoniker Id="eafa69d5-4fe3-4441-805f-6687087ce683" />
+        <classShapeMoniker Id="f01b12df-0d6b-4118-993b-b08c84caebe9" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

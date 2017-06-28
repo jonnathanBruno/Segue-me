@@ -1,0 +1,833 @@
+﻿.legenda-campo {
+
+    font-size:10px;
+
+
+}
+
+.form-control-nome {
+  display: block;
+  height: 40px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #ccc;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+}
+
+.form-control-nome-d {
+  display: block;
+  width: 40%;
+  height: 40px;
+  padding: 6px 12px;    
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #ccc;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom:15px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+}
+
+
+
+
+
+.col-sm-10-new {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color:aqua;
+  width:100%;
+  height:50px;
+
+}
+
+.form-group{
+
+    margin:0;
+}
+
+.form-horizontal{
+    margin:0;
+
+}
+
+/*@media(min-width:300px) {
+
+
+    .form-control-nome {
+        display: block;
+        width: 10%;
+        height: 40px;
+    }
+
+}*/
+
+
+
+@media screen and (min-width: 200px) and (max-width: 965px) {
+
+
+#segunda-coluna-unica1 {background:; width:100%; height:50px; float:left;}
+
+
+.input-group.date .input-group-addon {
+  cursor: pointer;
+  background:;
+  height:40px;
+  width:7%;
+  position:relative;
+  left:-18px;
+  
+}
+
+    #form-control1 {
+        width: 89%;
+        background: #fff;
+        height:40px;
+        margin-left:5%;
+        margin-top: 0px;
+    }
+
+
+
+
+.bootstrap-select > .dropdown-toggle {
+  width: 94%;
+  height:40px;
+  margin-top:5px;    
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 90%;
+   margin-left: 5%;
+     padding-right: 0px;
+  border-color: red;
+    background-color:;
+
+}
+
+
+    #bug-h1form {margin-top:60px;}
+
+
+#segunda-coluna-unica {background:; width:90%; height:100px; float:left;}
+
+
+ #form-control-certo {
+        width: 100%;
+        height:90%;
+        background: #fff;
+        margin-top: 10px;
+    }
+
+#segunda-coluna-d-dominio {background:; width:100%; height:80px; float:left; }
+
+
+.dominio-nao{color: #D00E0E;font-weight: bold;position: relative;top: 0px; left:18px;}
+.dominio-sim{color: #00f221;font-weight: bold;position: relative;top: 0px; left:18px;}
+.dominio-che{color: #4800ff;font-weight: bold;position: relative;top: 0px; left:18px;}
+
+
+.valida-input-1 {font-size:14px; position:absolute; top:52px; padding-left:10px; margin-left:25px; margin-top:5px; color:red; background-color:#fff;}
+.valida-input-2 {font-size:14px; position:absolute; top:102px; padding-left:10px; margin-left:25px; margin-top:5px; color:red; background-color:#fff;}
+.valida-input-3 {font-size:14px; position:absolute; top:152px; padding-left:10px; margin-left:25px; margin-top:5px; color:red; background-color:#fff;}
+.valida-input-4 {font-size:14px; position:absolute; top:202px; padding-left:10px; margin-left:25px; margin-top:5px; color:red; background-color:#fff;}
+.valida-input-5 {font-size:14px; position:absolute; top:252px; padding-left:10px; margin-left:25px; margin-top:5px; color:red; background-color:#fff;}
+.valida-input-6 {font-size:14px; position:absolute; top:302px; padding-left:10px; margin-left:25px; margin-top:5px; color:red; background-color:#fff;}
+
+#valida-input-2 {top:102px;}
+#valida-input-3 {top:152px;}
+#valida-input-4 {top:202px;}
+#valida-input-5 {top:252px;}
+#valida-input-6 {top:332px;}
+#valida-input-6-ju {top:300px;}
+#valida-input-7 {top:382px;}
+#valida-input-8 {top:432px;}
+#valida-input-9 {top:482px;}
+#valida-input-10 {top:532px;}
+#valida-input-11 {top:582px;}
+#valida-input-12 {top:632px;}
+#valida-input-13 {top:682px;}
+#valida-input-14 {top:732px;}
+#valida-input-dominio {top:858px;}
+.valida-input-dominio {font-size:14px; position:absolute; top:322px; padding-left:10px; margin-left:-260px; margin-top:5px; color:red; background-color:#fff;}
+
+
+
+#primeira-coluna-d-d {background-color:antiquewhite; width:100%; height:40px; float:left; color:red; margin-bottom:10px; margin-top:10px;}
+#primeira-coluna-d {background:; width:100%; height:20px; float:left;}
+#segunda-coluna-d {background:; width:100%; height:50px; float:left;}
+#terceira-coluna-d {background:; width:100%; height:50px; float:left;}
+#quarta-coluna-d {background:; width:100%; height:50px; float:right;}
+
+
+.form-label-nome {padding-top:12px;padding-left:28px; color:#000; font-weight:bold; float:left; width:100%; height:30px; background-color:;
+}
+
+.caixa-escolha {background-color:; width:100%; float:left; margin-left:10px; padding:5px;}
+
+#coisas {text-align:center; margin:0 auto;  left: 50%;
+  margin-left: -100px; /* A metade de sua largura. */
+  position: absolute;
+  width: 200px; /* O valor que você desejar. */}
+
+#coisas-salvar-contas {text-align:center; margin:0 auto;  left: 50%;
+  margin-left: -100px; /* A metade de sua largura. */
+  position: absolute;
+  width: 200px; /* O valor que você desejar. */}
+
+#coisas-salvar {text-align:center; margin:0 auto;  left: 50%;
+  margin-left: -100px; /* A metade de sua largura. */
+  position: absolute;
+  width: 200px; /* O valor que você desejar. */}
+
+#coisas-salvar-1 {text-align:center; margin:0 auto;  left: 50%;
+  margin-left: -100px; /* A metade de sua largura. */
+  position: absolute;
+  width: 200px; /* O valor que você desejar. */}
+
+#form-control-filtro {
+        width: 90%;
+
+    }
+
+    .form-control-nome {
+        
+        background: green;
+        z-index:auto;
+    }
+
+    .form-control-nome{
+        width: 90%;
+        background: #fff;
+        margin-top: 10px;
+        z-index:999;
+    }
+
+
+#linha-principal{
+
+    background:; width:100%; height:50px; margin-bottom:0px;
+}
+
+#primeira-coluna {
+
+    background:; width:100%; height:20px; float:left;
+
+}
+#segunda-coluna {
+
+    background:; width:100%; height:50px; float:left;
+
+}
+
+#terceira-coluna {
+
+    background:; width:100%; height:50px; float:left;
+
+}
+
+
+
+#linha-principal-v{
+
+    background:; width:100%; height:10px; margin-bottom:0px;
+}
+
+#primeira-coluna-v{
+
+    background:; width:0%; height:10px; float:left;
+
+}
+
+
+#segunda-coluna-v {
+
+    background:; width:50%; height:10px; float:left;
+
+}
+
+#terceira-coluna-v {
+
+    background:; width:50%; height:10px; float:left;
+
+}
+
+
+.legenda-campo {
+
+        text-align:center;
+        font-size:11px;
+        color:red;
+
+
+}
+
+
+
+}
+
+
+@media screen and (min-width: 965px) and (max-width: 1200px){
+
+
+#segunda-coluna-unica1 {background:; width:85%; height:50px; float:left;}
+
+
+.input-group.date .input-group-addon {
+  cursor: pointer;
+  background:;
+  height:40px;
+  position:relative;
+  left:-5px;
+  
+}
+
+    #form-control1 {
+        width: 86%;
+        background: #fff;
+        height:40px;
+        margin-left: 19px;
+        margin-top: 0px;
+    }
+
+
+
+.bootstrap-select > .dropdown-toggle {
+  width: 92%;
+  height:40px;
+  padding-right: 30px;
+  margin-top:5px;
+ 
+       
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 100%;
+   margin-left: 10px;
+  border-color: red;
+    background-color:;
+
+}
+
+
+#segunda-coluna-d-dominio {background:; width:33.5%; height:50px; float:left;}
+
+
+.valida-input-dominio {font-size:14px; position:absolute; top:322px; padding-left:10px; margin-left:-280px; margin-top:5px; color:red; background-color:#fff;}
+
+.valida-input-1 {font-size:14px; position:absolute; top:22px; padding-left:10px; margin-left:15px; margin-top:5px; color:red; background-color:#fff;}
+.valida-input-2 {font-size:14px; position:absolute; top:72px; padding-left:10px; margin-left:15px; margin-top:5px; color:red; background-color:#fff;}
+.valida-input-3 {font-size:14px; position:absolute; top:122px; padding-left:10px; margin-left:15px; margin-top:5px; color:red; background-color:#fff;}
+.valida-input-4 {font-size:14px; position:absolute; top:172px; padding-left:10px; margin-left:15px; margin-top:5px; color:red; background-color:#fff;}
+.valida-input-5 {font-size:14px; position:absolute; top:222px; padding-left:10px; margin-left:15px; margin-top:5px; color:red; background-color:#fff;}
+.valida-input-6 {font-size:14px; position:absolute; top:272px; padding-left:0px; margin-left:25px; margin-top:5px; color:red; background-color:#fff;}
+
+.dominio-nao{color: #D00E0E;font-weight: bold;position: relative;top: 5px; left:10px;}
+.dominio-sim{color: #00f221;font-weight: bold;position: relative;top: 5px; left:10px;}
+.dominio-che{color: #4800ff;font-weight: bold;position: relative;top: 5px; left:10px;}
+
+/*SISTEMA COM 4 COLUNAS*/
+#primeira-coluna-d-d {background:; width:15%; height:50px; float:left;}
+#primeira-coluna-d {background:; width:15%; height:50px; float:left;}
+#segunda-coluna-d {background:; width:33.5%; height:50px; float:left;}
+#terceira-coluna-d {background:; width:25%; height:50px; float:left;}
+#quarta-coluna-d {background:; width:25%; height:50px; float:left;}
+
+/*SISTEMA COM 5 COLUNAS*/
+
+#linha-principal{background:; width:100%; height:50px; margin-bottom:0px;}
+#primeira-coluna {background:; width:15%; height:50px; float:left;}
+#segunda-coluna {background:; width:42.5%; height:50px; float:left;}
+#terceira-coluna {background:; width:42.5%; height:50px; float:left;}
+#primeira-coluna-d-d-n {background:; width:15%; height:50px; float:left;}
+
+
+.caixa-escolha {background-color:;  float:left; padding-left:3px; width:33%;}
+
+#segunda-coluna-d-escolha {background:; width:85%; height:50px; float:left;}
+
+
+#linha-principal-v{
+
+    background:; width:100%; height:20px; margin-bottom:;
+}
+
+#primeira-coluna-v{
+
+    background:; width:15%; height:10px; float:left;
+
+}
+
+#segunda-coluna-v {
+
+    background:; width:42.5%; height:10px; float:left;
+
+}
+
+#terceira-coluna-v {
+
+    background:; width:42.5%; height:10px; float:left;
+
+}
+
+.legenda-campo {
+
+        text-align:center;
+        font-size:12px;
+        color:red;
+
+
+
+}
+
+.form-label-nome {
+
+    padding-top:5px;
+    padding-left:20px;
+
+}
+
+
+#form-control-filtro {
+        width: 96%;
+
+    }
+
+
+    .form-control-nome {
+        width: 92%;
+        background: #fff;
+        margin-top: 10px;
+    }
+
+
+    .form-control-nome-d {
+        width: 38%;
+        background: orange;
+        margin-bottom: 10px;
+        float:left;
+    }
+}
+
+
+/*
+@media screen and (min-width: 495px) and (max-width: 796px) {
+
+    .form-control-nome {
+        width: 36%;
+        background: green;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-control-nome-d {
+        width: 38%;
+        background: green;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+}*/
+
+@media screen and (min-width: 1200px) and (max-width: 2200px) {
+
+
+   
+
+.input-group.date .input-group-addon {
+  cursor: pointer;
+  background:;
+  height:40px;
+  position:relative;
+  left:-10px;
+  
+}
+
+    #form-control1 {
+        width: 89%;
+        background: #fff;
+        height:40px;
+        margin-left: 19px;
+        margin-top: 0px;
+    }
+
+
+
+
+
+.bootstrap-select > .dropdown-toggle {
+  width: 100%;
+  height:40px;
+  padding-right: 30px;
+  
+ 
+       
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 100%;
+  border-color: red;
+    background-color:;
+
+}
+
+
+
+
+
+#bug-h1form {margin-top:2%;}
+
+#segunda-coluna-d-dominio {background:; width:33.5%; height:50px; float:left;}
+
+/*.valida-input-1 input{font-size:14px; position:absolute; top:32px; padding-left:10px; margin-left:15px; margin-top:5px; color:green; 
+                 background: #fff url(img/invalid.png) no-repeat 98% center;}*/
+
+.valida-input-1 {font-size:14px; position:absolute; top:32px; padding-left:10px; margin-left:15px; margin-top:5px; color:green;}
+
+
+
+/*.valida-input-1 input:focus:invalid, .contact_form textarea:focus:invalid { /* when a field is considered invalid by the browser 
+    background: #fff url(images/invalid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535}*/
+
+.valida-input-2 {font-size:14px; position:absolute; top:82px; padding-left:10px; margin-left:15px; margin-top:5px; color:red; background-color:#fff;}
+.valida-input-3 {font-size:14px; position:absolute; top:132px; padding-left:10px; margin-left:15px; margin-top:5px; color:red; background-color:#fff;}
+.valida-input-4 {font-size:14px; position:absolute; top:182px; padding-left:10px; margin-left:15px; margin-top:5px; color:red; background-color:#fff;}
+.valida-input-5 {font-size:14px; position:absolute; top:232px; padding-left:10px; margin-left:15px; margin-top:5px; color:red; background-color:#fff;}
+.valida-input-6 {font-size:14px; position:absolute; top:282px; padding-left:0px; margin-left:25px; margin-top:5px; color:red; background-color:#fff;}
+
+.valida-input-dominio {font-size:14px; position:absolute; top:332px; padding-left:10px; margin-left:-335px; margin-top:5px; color:red; background-color:#fff;}
+
+.dominio-nao{color: #D00E0E;font-weight: bold;position: relative;top: 5px; left:10px;}
+.dominio-sim{color: #00f221;font-weight: bold;position: relative;top: 5px; left:10px;}
+.dominio-che{color: #4800ff;font-weight: bold;position: relative;top: 5px; left:10px;}
+
+/*SISTEMA COM 4 COLUNAS*/
+#primeira-coluna-d-d {background:; width:15%; height:50px; float:left;}
+#primeira-coluna-d {background:; width:15%; height:50px; float:left;}
+#segunda-coluna-d {background:; width:33.5%; height:50px; float:left;}
+#terceira-coluna-d {background:; width:25%; height:50px; float:left;}
+#quarta-coluna-d {background:; width:25%; height:50px; float:left;}
+
+/*SISTEMA COM 5 COLUNAS*/
+
+#linha-principal{background:; width:100%; height:50px; margin-bottom:0px;}
+#primeira-coluna {background:; width:15%; height:50px; float:left;}
+#segunda-coluna {background:; width:42.5%; height:50px; float:left;}
+#terceira-coluna {background:; width:42.5%; height:50px; float:left;}
+#primeira-coluna-d-d-n {background:; width:15%; height:50px; float:left;}
+
+#segunda-coluna-unica {background:; width:85%; height:100px; float:left;}
+#segunda-coluna-unica1 {background:; width:85%; height:50px; float:left;}
+
+ #form-control-certo {
+        height:90%;
+        background: #fff;
+        margin-top: 10px;
+    }
+
+
+
+.caixa-escolha {background-color:;  float:left; padding-left:3px; width:33%;}
+
+#segunda-coluna-d-escolha {background:; width:85%; height:50px; float:left;}
+
+
+#linha-principal-v{
+
+    background:; width:100%; height:20px; margin-bottom:;
+}
+
+#primeira-coluna-v{
+
+    background:; width:15%; height:10px; float:left;
+
+}
+
+#segunda-coluna-v {
+
+    background:; width:42.5%; height:10px; float:left;
+
+}
+
+#terceira-coluna-v {
+
+    background:; width:42.5%; height:10px; float:left;
+
+}
+
+.legenda-campo {
+
+        text-align:center;
+        font-size:12px;
+        color:red;
+
+
+
+}
+
+.form-label-nome {
+
+    padding-top:5px;
+    padding-left:20px;
+
+}
+
+#coisas-salvar-contas {margin-left:10px;}
+
+#coisas-salvar-1 {margin-left:20px;}
+
+
+#form-control-filtro {
+        width: 96%;
+
+    }
+
+
+
+    .form-control-nome {
+        width: 92%;
+        background: #fff;
+        margin-top: 10px;
+    }
+
+
+
+
+    .form-control-nome-d {
+        width: 38%;
+        background: orange;
+        margin-bottom: 10px;
+        float:left;
+    }
+}
+
+
+
+
+/*NOVO AQUI TESTANDO
+
+#linha-principal{
+
+    background:blue; width:100%; height:50px; margin-bottom:10px;
+}
+
+#primeira-coluna {
+
+    background:green; width:15%; height:50px; float:left;
+
+}
+
+#segunda-coluna {
+
+    background:skyblue; width:42.5%; height:50px; float:left;
+
+}
+
+#terceira-coluna {
+
+    background:orange; width:42.5%; height:50px; float:left;
+
+}*/
+
+
+
+/* CSS OARA VALIDAÇÃO DOS FORMS*/
+
+:-moz-placeholder {
+    color: #dcdbdb;
+}
+ 
+::-webkit-input-placeholder {
+    color: #dcdbdb;
+}
+
+/* CSS basic */
+
+*:focus {outline: none;}
+
+body {font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
+.contact_form h2, .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
+.form_hint, .required_notification {font-size: 11px;}
+
+
+.contact_form ul {
+    width:750px;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+}
+.contact_form li{
+    padding:12px; 
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+
+.contact_form li:first-child, .contact_form li:last-child {
+    border-bottom:1px solid #777;
+}
+
+.contact_form h2 {
+    margin:0;
+    display: inline;
+}
+.required_notification {
+    color:#d45252; 
+    margin:5px 0 0 0; 
+    display:inline;
+    float:right;
+}
+
+
+.contact_form label {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    float:left;
+    padding:3px;
+}
+.contact_form input {
+    height:20px; 
+    width:220px; 
+    padding:5px 8px;
+}
+.contact_form textarea {padding:8px; width:300px;}
+.contact_form button {margin-left:156px;}
+
+
+
+
+.contact_form input, .contact_form textarea { 
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+}
+.contact_form input:focus, .contact_form textarea:focus {
+    background: #fff; 
+    border:1px solid #555; 
+    box-shadow: 0 0 3px #aaa; 
+}
+/* Button Style */
+button.submit {
+    background-color: #68b12f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+button.submit:hover {
+    opacity:.85;
+    cursor: pointer; 
+}
+button.submit:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset; 
+    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+     
+}
+
+
+.contact_form input:focus, .contact_form textarea:focus { /* add this to the already existing style */
+    padding-right:70px;
+}
+
+.contact_form input, .contact_form textarea { /* add this to the already existing style */
+    -moz-transition: padding .25s; 
+    -webkit-transition: padding .25s; 
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+
+
+.contact_form input, .contact_form textarea {
+    padding-right:30px;
+}
+
+
+input:required, textarea:required {
+    background: #fff url(img/red_asterisk.png) no-repeat 98% center;
+
+}
+
+.form-horizontal input:focus:invalid, .contact_form textarea:focus:invalid { /* when a field is considered invalid by the browser */
+    background: #fff url(img/invalid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+.form-horizontal input:required:valid, .contact_form textarea:required:valid { /* when a field is considered valid by the browser */
+    /*background: #fff url(img/valid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;*/
+}
+
+
+
+
+/* CSS FILE */
+
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    margin-top:8px;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+
+}

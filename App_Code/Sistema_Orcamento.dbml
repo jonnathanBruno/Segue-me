@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SEGUEME" Class="Sistema_OrcamentoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=JONNATHAN-PC;Initial Catalog=SEGUEME;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="SEGUEMEConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.EQUIPE" Member="EQUIPEs">
+    <Type Name="EQUIPE">
+      <Column Name="idEquipe" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="EQUIPE_SEGUIDOREQUIPE" Member="SEGUIDOREQUIPEs" ThisKey="idEquipe" OtherKey="idEquipe" Type="SEGUIDOREQUIPE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SEGUIDOR" Member="SEGUIDORs">
+    <Type Name="SEGUIDOR">
+      <Column Name="idSeguidor" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="endereco" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="fone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="aniversario" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="nomeCirculo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="padrinhos" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="anoSegueMe" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="paroquia" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="coordenadorJovem" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="SEGUIDOR_SEGUIDOREQUIPE" Member="SEGUIDOREQUIPEs" ThisKey="idSeguidor" OtherKey="idSeguidor" Type="SEGUIDOREQUIPE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SEGUIDOREQUIPE" Member="SEGUIDOREQUIPEs">
+    <Type Name="SEGUIDOREQUIPE">
+      <Column Name="idSeguidorEquipe" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idSeguidor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idEquipe" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ano" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="paroquia" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="funcao" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="equipe" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="EQUIPE_SEGUIDOREQUIPE" Member="EQUIPE1" ThisKey="idEquipe" OtherKey="idEquipe" Type="EQUIPE" IsForeignKey="true" />
+      <Association Name="SEGUIDOR_SEGUIDOREQUIPE" Member="SEGUIDOR" ThisKey="idSeguidor" OtherKey="idSeguidor" Type="SEGUIDOR" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,62 @@
+﻿<script src="assets/js/common-scripts.js"></script>
+
+<header class="header black-bg">
+
+    <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+    </div>
+    <!--logo start-->
+    <a href="index.html" class="logo"><b>SEGUE-ME</b></a>
+    <!--logo end-->
+    <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+        </ul>
+    </div>
+
+</header>
+
+
+<aside>
+
+    <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        
+        <ul class="sidebar-menu" id="nav-accordion">
+            <p class="centered"><a><img src="arquivos_empresa/logo.png" class="img-circle" width=150"></a></p>
+            <li class="sub-menu">
+                <a ng-class="{'active' : pathname == '/Sistema/cadastrar_Seguidor.html'}"
+                   href="cadastrar_Seguidor.html">
+                    <span class="glyphicon glyphicon-plus" style="margin-right:3px;"></span>
+                    <span>Cadastrar Seguidor</span>
+                </a>
+            </li>
+         
+            <li class="sub-menu">
+                <a ng-class="{'active' : pathname == '/Sistema/cadastrar_naEquipe.html'}"
+                   href="cadastrar_naEquipe.html">
+                    <span class="glyphicon glyphicon-book" style="margin-right:3px;"></span>
+                    <span>Cadastrar Seguidor na Equipe</span>
+                </a>
+            </li>
+
+            <li class="sub-menu">
+                <a ng-class="{'active' : pathname == '/Sistema/visualizar_Seguidor.html'}"
+                   href="visualizar_Seguidor.html">
+                    <span class="glyphicon glyphicon-eye-open" style="margin-right:3px;"></span>
+                    <span>Visualizar Seguidor</span>
+                </a>
+            </li>
+
+            <li class="sub-menu">
+                <a ng-class="{'active' : pathname == '/Sistema/visualizar_SeguidorEquipe.html'}"
+                   href="visualizar_SeguidorEquipe.html">
+                    <span class="glyphicon glyphicon-eye-open" style="margin-right:3px;"></span>
+                    <span>Visualizar Seguidor/Equipes</span>
+                </a>
+            </li>
+
+        </ul>
+        <!-- sidebar menu end-->
+    </div>
+
+</aside>

@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Ipragas", ".", "{A1DDC346-7F0E-4DCF-8484-E32CA39A2A5B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62214"
+		Debug.AspNetCompiler.PhysicalPath = "..\projeto-orcamento\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62214\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62214"
+		Release.AspNetCompiler.PhysicalPath = "..\projeto-orcamento\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62214\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62214"
+		SlnRelativePath = "..\projeto-orcamento\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1DDC346-7F0E-4DCF-8484-E32CA39A2A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1DDC346-7F0E-4DCF-8484-E32CA39A2A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1DDC346-7F0E-4DCF-8484-E32CA39A2A5B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A1DDC346-7F0E-4DCF-8484-E32CA39A2A5B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A1DDC346-7F0E-4DCF-8484-E32CA39A2A5B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A1DDC346-7F0E-4DCF-8484-E32CA39A2A5B}.Debug|x86.Build.0 = Debug|Any CPU
+		{A1DDC346-7F0E-4DCF-8484-E32CA39A2A5B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1DDC346-7F0E-4DCF-8484-E32CA39A2A5B}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A1DDC346-7F0E-4DCF-8484-E32CA39A2A5B}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A1DDC346-7F0E-4DCF-8484-E32CA39A2A5B}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A1DDC346-7F0E-4DCF-8484-E32CA39A2A5B}.Release|x86.ActiveCfg = Debug|Any CPU
+		{A1DDC346-7F0E-4DCF-8484-E32CA39A2A5B}.Release|x86.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
