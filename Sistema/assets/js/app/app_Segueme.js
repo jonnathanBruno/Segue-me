@@ -1,4 +1,4 @@
-var model = angular.module('Segueme', ['ngMask']);
+var model = angular.module('Segueme', ['ngMask', 'angularUtils.directives.dirPagination']);
 var dominio = window.location.origin + "/";
 
 

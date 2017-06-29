@@ -85,6 +85,11 @@
                                                 <label for="search">Pesquisar:</label>
                                                 <input ng-model="q" id="search" class="form-control" placeholder="Buscar">
                                             </div>
+
+                                            <div class="col-xs-4">
+                                                <label for="search">Quantidade por página:</label>
+                                                <input type="number" ng-model="p" id="search" class="form-control" placeholder="Quantidade por página">
+                                            </div>
                                         </div>
                                         <br>
                                         <div class="panel panel-default">
@@ -93,21 +98,20 @@
                                                 <table class="table user-list">
                                                     <thead>
                                                         <tr>
-                                                            <th><span>Cod</span></th>
                                                             <th><span>Seguidor</span></th>
                                                             <th><span>Email</span></th>
                                                             <th><span>Endereço</span></th>
                                                             <th><span>Telefone</span></th>
                                                             <th><span>Aniversário</span></th>
                                                             <th><span>Cor Círculo</span></th>
+                                                            <th><span>Cord. Jovem</span></th>
                                                             <th><span>Padrinhos</span></th>
                                                             <th><span>Ano Segue-me</span></th>
                                                             <th><span>Paróquia</span></th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr ng-repeat="seguidor in seguidores | filter:q" current-page="currentPage">
-                                                            <td>{{seguidor.idSeguidor}}</td>
+                                                        <tr dir-paginate="seguidor in seguidores | itemsPerPage: p | filter: q">                                                        
                                                             <td>{{seguidor.nome}}</td>
                                                             <td>{{seguidor.email}}</td>
                                                             <td>{{seguidor.endereco}}</td>
@@ -123,6 +127,7 @@
                                                                 {{seguidor.nomeCirculo}}
                                                                 </span>
                                                             </td>
+                                                            <td>{{seguidor.coordenadorJovem}}</td>
                                                             <td>{{seguidor.padrinhos}}</td>
                                                             <td>{{seguidor.anoSegueMe}}</td>
                                                             <td>{{seguidor.paroquia}}</td>
@@ -137,6 +142,7 @@
                                                         </tr>
                                                     </tbody>
                                                 </table>
+                                                <dir-pagination-controls></dir-pagination-controls>
                                             </div>
                                         </div>
                                     </div>
