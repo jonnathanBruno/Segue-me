@@ -32,6 +32,33 @@
         webshims.polyfill('forms forms-ext');
     </script>
 
+    <style>
+        .verde{
+            color:green;
+            font-weight: bold;
+        }
+        .laranja{
+            color:darkorange;
+            font-weight: bold;
+        }
+        .azul{
+            color:darkblue;
+            font-weight: bold;
+        }
+        .vermelho{
+            color:red;
+            font-weight: bold;
+        }
+         .rosa{
+            color:deeppink;
+            font-weight: bold;
+        }
+        .amarelo{
+            color:yellow;
+            font-weight: bold;
+        }
+    </style>
+
 </head>
 
 <body ng-controller="seguemeController" ng-init="listarSeguidor()">
@@ -86,12 +113,21 @@
                                                             <td>{{seguidor.endereco}}</td>
                                                             <td>{{seguidor.fone}}</td>
                                                             <td>{{seguidor.aniversario | date:"dd/MM/yyyy"}}</td>
-                                                            <td>{{seguidor.nomeCirculo}}</td>
+                                                            <td> <span  ng-class="{'verde' : seguidor.nomeCirculo=='VERDE',
+                                                                                   'laranja' : seguidor.nomeCirculo=='LARANJA',
+                                                                                   'vermelho' : seguidor.nomeCirculo=='VERMELHO',
+                                                                                   'rosa' : seguidor.nomeCirculo=='ROSA',
+                                                                                   'amarelo' : seguidor.nomeCirculo=='AMARELO',
+                                                                                   'azul' : seguidor.nomeCirculo=='AZUL'}">
+
+                                                                {{seguidor.nomeCirculo}}
+                                                                </span>
+                                                            </td>
                                                             <td>{{seguidor.padrinhos}}</td>
                                                             <td>{{seguidor.anoSegueMe}}</td>
                                                             <td>{{seguidor.paroquia}}</td>
                                                             <td>
-                                                                <a data-toggle="modal" href="#" ng-click="modalExcluirFornecedor(fornecedor)" style="color:#e74c3c">
+                                                                <a data-toggle="modal" href="#" ng-click="modalExcluirSeguidor(seguidor)" style="color:#e74c3c">
                                                                     <span class="fa-stack">
                                                                         <i class="fa fa-square fa-stack-2x"></i>
                                                                         <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
@@ -118,7 +154,7 @@
         <!--footer end-->
     </section>
 
-    <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="modalFornecedorExcluidoComSucesso" class="modal fade">
+    <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="modalSeguidorExcluidoComSucesso" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -126,7 +162,7 @@
                     <h4 class="modal-title">Sucesso!</h4>
                 </div>
                 <div class="modal-body">
-                    <p>Fornecedor excluído com sucesso.</p>
+                    <p>Seguidor excluído com sucesso.</p>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-theme" onclick="window.location.reload()">Confirmar!</button>
@@ -136,19 +172,19 @@
     </div>
     <!-- modal -->
 
-    <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="modalExcluirFornecedor" class="modal fade">
+    <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="modalExcluirSeguidor" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Desesa Realmente Excluir Este Fornecedor?</h4>
+                    <h4 class="modal-title">Desesa Realmente Excluir Este Seguidor?</h4>
                 </div>
                 <div class="modal-body">
-                    <p>Se você realmente deseja excluir este Fornecedor clique no botão confirmar.</p>
+                    <p>Se você realmente deseja excluir este Seguidor clique no botão confirmar.</p>
                 </div>
                 <div class="modal-footer">
                     <button data-dismiss="modal" class="btn btn-default" type="button">Cancelar</button>
-                    <button class="btn btn-theme" ng-click="excluirFornecedor();">Confirmar</button>
+                    <button class="btn btn-theme" ng-click="excluirSeguidor();">Confirmar</button>
                 </div>
             </div>
         </div>

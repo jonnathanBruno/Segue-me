@@ -56,7 +56,52 @@ model.controller('seguemeController', function ($scope, $http, $rootScope) {
             }
         });
     }
+
+    $scope.modalExcluirSeguidor = function (seguidor) {
+        $rootScope.seguidorExcluir = seguidor;
+        $('#modalExcluirSeguidor').modal('toggle');
+        $('#modalExcluirSeguidor').modal('show');
+    }
+
+    $scope.excluirSeguidor = function () {
+        $scope.loading = true;
+
+        $http.post("/Sistema/SERVIDOR/segueme.asmx/excluirSeguidor", { seguidor: JSON.stringify($rootScope.seguidorExcluir) }).success(function (data) {
+            $scope.loading = false;
+            if (data.d == "Ok") {
+                $('#modalExcluirSeguidor').modal('toggle');
+                $('#modalExcluirSeguidor').modal('hide');
+
+                $('#modalSeguidorExcluidoComSucesso').modal('toggle');
+                $('#modalSeguidorExcluidoComSucesso').modal('show');
+            } else {
+                location.href = "erro/erro.html";
+            }
+        });
+    }
    
+    $scope.modalExcluirSeguidorEquipe = function (seguidor) {
+        $rootScope.seguidorEquipeExcluir = seguidor;
+        $('#modalExcluirSeguidorEquipe').modal('toggle');
+        $('#modalExcluirSeguidorEquipe').modal('show');
+    }
+
+    $scope.excluirSeguidorEquipe = function () {
+        $scope.loading = true;
+
+        $http.post("/Sistema/SERVIDOR/segueme.asmx/excluirSeguidorEquipe", { seguidor: JSON.stringify($rootScope.seguidorEquipeExcluir) }).success(function (data) {
+            $scope.loading = false;
+            if (data.d == "Ok") {
+                $('#modalExcluirSeguidorEquipe').modal('toggle');
+                $('#modalExcluirSeguidorEquipe').modal('hide');
+
+                $('#modalSeguidorEquipeExcluidoComSucesso').modal('toggle');
+                $('#modalSeguidorEquipeExcluidoComSucesso').modal('show');
+            } else {
+                location.href = "erro/erro.html";
+            }
+        });
+    }
 
 }).directive('menu', function () {
     return {

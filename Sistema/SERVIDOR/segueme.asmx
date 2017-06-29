@@ -124,4 +124,57 @@ public class Classe_segueme : System.Web.Services.WebService
 
     }
 
+    [WebMethod]
+    public string excluirSeguidor(string seguidor)
+    {
+        Seguidor seguidorD = JsonConvert.DeserializeObject<Seguidor>(seguidor);
+        Sistema_OrcamentoDataContext db = new Sistema_OrcamentoDataContext();
+
+        var seguidorExcluir = (from s in db.SEGUIDORs
+                               where s.idSeguidor == seguidorD.idSeguidor
+                               select s).First();
+
+        var seguidorEquipes = (from s in db.SEGUIDOREQUIPEs
+                               where s.idSeguidor == seguidorExcluir.idSeguidor
+                               select s).ToList();
+
+        db.SEGUIDOREQUIPEs.DeleteAllOnSubmit(seguidorEquipes);
+        db.SEGUIDORs.DeleteOnSubmit(seguidorExcluir);
+
+        try
+        {
+            db.SubmitChanges();
+            return "Ok";
+        }
+        catch (Exception e)
+        {
+            return "Erro";
+        }
+
+    }
+
+    [WebMethod]
+    public string excluirSeguidorEquipe(string seguidor)
+    {
+        Seguidor seguidorD = JsonConvert.DeserializeObject<Seguidor>(seguidor);
+        Sistema_OrcamentoDataContext db = new Sistema_OrcamentoDataContext();
+
+        var seguidorExcluir = (from s in db.SEGUIDOREQUIPEs
+                               where s.idSeguidorEquipe == seguidorD.idSeguidorEquipe
+                               select s).First();
+
+        db.SEGUIDOREQUIPEs.DeleteOnSubmit(seguidorExcluir);
+
+        try
+        {
+            db.SubmitChanges();
+            return "Ok";
+        }
+        catch (Exception e)
+        {
+            return "Erro";
+        }
+
+    }
+
 }
